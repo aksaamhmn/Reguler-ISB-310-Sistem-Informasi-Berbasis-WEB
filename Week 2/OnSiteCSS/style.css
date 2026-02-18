@@ -1,0 +1,255 @@
+body {
+  background-color: #4d83aa;
+  font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+  margin: 0;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 800px;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+}
+
+/* --- HEADER KUNING --- */
+.header {
+  background-color: #e2d800;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #032152;
+  border-radius: 8px 8px 0 0;
+}
+
+/* --- LUBANG --- */
+.rings {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-image: radial-gradient(circle, #4d83aa 5px, transparent 5px);
+  background-size: 20px 10px;
+  background-repeat: repeat-x;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 32px;
+}
+
+/* --- KONTEN BAWAH --- */
+.content-area {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* --- SIDEBAR KIRI --- */
+.sidebar {
+  flex: 0 0 300px;
+  width: 300px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+  border-right: 3px dotted #032152;
+  border-radius: 0 0 0 8px;
+}
+
+.sidebar h2 {
+  color: #032152;
+  margin: 0 0 5px 0;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.sidebar hr {
+  border: none;
+  border-top: 3px dotted #032152;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 5px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #4d83aa;
+  font-size: 15px;
+}
+
+.search-box {
+  display: flex;
+  gap: 5px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+.search-box button {
+  padding: 5px 10px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+/* --- KONTEN KANAN --- */
+.main {
+  flex: 0 0 500px;
+  width: 500px;
+  background-color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+  min-height: 500px;
+  border-radius: 0 0 8px 8px;
+}
+
+.title-main {
+  color: #032152;
+  font-weight: normal;
+  font-size: 24px;
+  margin: 0 0 20px 0;
+}
+
+/* --- TABEL --- */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #032152;
+}
+
+.data-table th {
+  background-color: #9cbcd0;
+  color: #032152;
+  padding: 12px;
+  border: none;
+}
+
+.data-table td {
+  background-color: #9cbcd0;
+  color: #ffffff;
+  padding: 12px;
+  text-align: center;
+  border: none;
+}
+
+.data-table tfoot td {
+  background-color: #ffffff;
+  color: #032152;
+  border-top: 2px solid #032152;
+  font-size: 13px;
+}
+
+.main-full {
+  background-color: #ffffff;
+  width: 100%;
+  min-height: 500px;
+  border-radius: 0 0 8px 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.title-form {
+  color: #032152;
+  font-weight: normal;
+  font-size: 26px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.form-wrapper {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-row {
+  display: flex;
+  gap: 8px;
+}
+
+.form-label {
+  flex: 1;
+  background-color: #c0e8fb;
+  color: #21678a;
+  border-radius: 8px;
+  padding: 12px 20px 12px 12px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 15px;
+}
+
+.form-input {
+  flex: 2;
+  background-color: #c0e8fb;
+  border-radius: 8px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+}
+
+.form-input input {
+  width: 100%;
+  border: 2px dotted #21678a;
+  border-radius: 6px;
+  padding: 8px;
+  font-family: inherit;
+  color: #21678a;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.form-row-full {
+  background-color: #c0e8fb;
+  border-radius: 8px;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #21678a;
+  font-size: 14px;
+}
+
+.form-row-full label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.submit-row {
+  padding: 8px 20px;
+}
+
+.btn-submit {
+  background-color: #4d83aa;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 25px;
+  font-family: inherit;
+  cursor: pointer;
+  font-size: 15px;
+}
