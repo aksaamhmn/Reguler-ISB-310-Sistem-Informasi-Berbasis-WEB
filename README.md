@@ -1,20 +1,27 @@
-# Tugas Reguler ISB-310: Sistem Informasi Berbasis Web
+# Sesi Click Counter
 
-Repository ini berisi kumpulan tugas untuk mata kuliah ISB-310 Sistem Informasi Berbasis Web.
+## Overview
 
-## Identitas Mahasiswa
+Proyek ini adalah aplikasi web sederhana berbasis HTML dan JavaScript yang berfungsi sebagai penghitung klik (_click counter_). Aplikasi ini memanfaatkan Web Storage API (`localStorage`) agar jumlah klik tetap tersimpan di dalam _browser_. Dengan demikian, angka hitungan tidak akan kembali ke nol meskipun pengguna memuat ulang (_refresh_) halaman atau menutup tab _browser_.
 
-- **Nama:** Muhammad Aqsha Muhaimin
-- **NRP:** 16-2023-003
-- **Program Studi:** Sistem Informasi
-- **Institusi:** Institut Teknologi Nasional (Itenas) Bandung
+## Penjelasan JavaScript
 
-## Daftar Tugas
+Logika utama aplikasi ini berjalan melalui skrip singkat berikut:
 
-- [Week 1: Pengumpulan Tugas Week 1](https://github.com/aksaamhmn/Reguler-ISB-310-Sistem-Informasi-Berbasis-WEB/tree/week-1)
-- [Week 2: Pengumpulan Tugas Week 2 (HTML CSS)](https://github.com/aksaamhmn/Reguler-ISB-310-Sistem-Informasi-Berbasis-WEB/tree/week-2)
-- _(Akan terus diperbarui setiap minggu)_
+```javascript
+let saved = localStorage.getItem("angkaSimpanan") || 0;
+clickBtn.onclick = () => {
+  localStorage.setItem("angkaSimpanan", ++saved);
+  counterDisplay.innerHTML = `You have clicked the button <b>${saved}</b> time(s).`;
+};
+```
 
----
+## Cara Kerja
 
-_Dibuat untuk memenuhi tugas mata kuliah semester 6._
+Inisialisasi: Baris pertama mengambil nilai terakhir dari localStorage dengan key "angkaSimpanan". Jika belum ada data sebelumnya, nilainya otomatis diatur ke 0.
+
+Event Listener: clickBtn.onclick mendeteksi setiap kali pengguna mengklik tombol.
+
+Update & Simpan: Setiap kali diklik, nilai saved ditambah 1 (++saved), lalu nilai terbarunya langsung disimpan kembali ke localStorage.
+
+Update Tampilan: Baris terakhir memperbarui teks pada layar HTML untuk menampilkan jumlah klik yang baru.
