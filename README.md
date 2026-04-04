@@ -16,6 +16,7 @@ Repository ini berisi kumpulan tugas untuk mata kuliah ISB-310 Sistem Informasi 
 - [Week 3: Pengumpulan Tugas Week 3 (Button Increment JS)](https://github.com/aksaamhmn/Reguler-ISB-310-Sistem-Informasi-Berbasis-WEB/tree/week-3)
 - [Week 4: Pengumpulan Tugas Week 4 (Kalkulator, Kasir, & Garis Hidup Numerologi)](https://github.com/aksaamhmn/Reguler-ISB-310-Sistem-Informasi-Berbasis-WEB/tree/week-4)
 - [Week 5: Pengumpulan Tugas Week 5 (Tabel Dinamis 5x5 dengan Efek Hover CSS)](https://github.com/aksaamhmn/Reguler-ISB-310-Sistem-Informasi-Berbasis-WEB/tree/week-5)
+- [Week 6: Pengumpulan Tugas Week 6 (CRUD PHP Native)](https://github.com/aksaamhmn/Reguler-ISB-310-Sistem-Informasi-Berbasis-WEB/tree/week-6)
 - _(Akan terus diperbarui setiap minggu)_
 
 ---
